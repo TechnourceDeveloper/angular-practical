@@ -14,12 +14,11 @@ git clone https://github.com/TechnourceDeveloper/angular-practical.git
 
 2. Navigate to the project directory:
 
-3. Install dependencies:
-
+3. Install all packages using `npm  install` command
 
 ## Usage
 
-1. Start the Angular development server using `ng serve`:
+1. Start the Angular development server using `ng serve`
 
 2. Open your browser and navigate to `http://localhost:4200/` to view the app.
 
