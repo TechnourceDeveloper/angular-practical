@@ -1,4 +1,4 @@
-# Weather Forecast Visualization App
+# Weather Forecast Visualisation - Angular App
 
 This Angular app fetches weather forecast data from an API and visualizes it using Chart.js. It displays a line chart representing the temperature forecast for selected locations.
 
@@ -10,7 +10,7 @@ This Angular app fetches weather forecast data from an API and visualizes it usi
 ## Setup
 
 1. Clone this repository to your local machine:
-git clone https://github.com/TechnourceDeveloper/angular-practical.git
+git clone https://github.com/TechnourceDeveloper/weather-forecast-visualisation-angular-app.git
 
 2. Navigate to the project directory:
 
