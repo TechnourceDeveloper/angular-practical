@@ -1,0 +1,8 @@
+<div [ngClass]="{'weather-menu-wrapper': true}">
+  @if (isLWX) {<h4>District of Columbia Forecast (LWX)</h4>}
+  @if (isTOP) {<h4>Kansas Forecast (TOP)</h4>}
+  <a routerLink="/home" [ngClass]="{'btn-primary': true}">Back</a>
+</div>
+<div [ngClass]="{'chart-wrapper': true}">
+  <canvas id="canvas">{{ chart }}</canvas>
+</div>
