@@ -1,0 +1,16 @@
+.chart-wrapper{
+    padding: 30px;
+    border-top: 2px solid gray;
+}
+.weather-menu-wrapper{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.weather-menu-wrapper h4{
+    margin: 0px;
+}
+.btn-primary{
+    padding: 6px 10px;
+}
