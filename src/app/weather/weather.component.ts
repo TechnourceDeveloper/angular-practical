@@ -4,11 +4,11 @@ import { WeatherService } from '../service/weather.service';
 import { Chart, registerables } from 'chart.js';
 import { CommonModule } from '@angular/common';
 import { DatePipe } from '@angular/common';
-
+import { LoaderComponent } from '../common/loader/loader.component';
 @Component({
   selector: 'app-weather',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, RouterModule, RouterLink],
+  imports: [RouterOutlet, CommonModule, RouterModule, RouterLink,LoaderComponent],
   templateUrl: './weather.component.html',
   styleUrl: './weather.component.css'
 })
@@ -26,6 +26,7 @@ export class WeatherComponent {
 
   isLWX: boolean = false;
   isTOP: boolean = false;
+  isLoading : boolean = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -35,6 +36,7 @@ export class WeatherComponent {
   }
 
   ngOnInit(): void {
+    this.isLoading = true;
     this.route.params.subscribe(params => {
       this.location = params['location'];
       this.isLWX = this.location === 'LWX';
@@ -53,6 +55,7 @@ export class WeatherComponent {
         this.forecastName = name;
         this.forecastTemperatures = temperatures;
         this.drawChart();
+        this.isLoading =false;
       });
     } catch (error) {
       console.log(error);

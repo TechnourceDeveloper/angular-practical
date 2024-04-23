@@ -1,6 +1,9 @@
 .chart-wrapper{
     padding: 30px;
     border-top: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .weather-menu-wrapper{
     padding: 15px;
