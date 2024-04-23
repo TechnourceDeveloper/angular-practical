@@ -19,7 +19,7 @@ git clone https://github.com/TechnourceDeveloper/angular-practical.git
 
 ## Usage
 
-1. Start the Angular development server:
+1. Start the Angular development server using `ng serve`:
 
 2. Open your browser and navigate to `http://localhost:4200/` to view the app.
 
